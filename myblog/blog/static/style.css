@@ -1,0 +1,119 @@
+body, h1, h2,h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #e5daf3;
+    color: #333;
+    padding: 100px;
+}
+
+h1 ,h3{
+    font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #7d7d7d;
+    margin-top: 20px;
+}
+
+p {
+    margin: 10px 0;
+    font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+p.published-date {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.header{
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.content{
+    padding: 50px;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    margin: 20px;
+    background-color: #474747;
+    border-radius: 10px;
+}
+.content h2 ,p , small,h4{
+    color: aliceblue;
+}
+
+.button-2 {
+  background-color: #c5c5c5;
+  border-radius: 8px;
+  border-width: 0;
+  color: #4a4a4a;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 20px;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+a{
+    text-decoration: None;
+    color: #4a4a4a;
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: darkgrey;
+    margin-bottom: 10px;
+}
+
+textarea, input[type="text"], input[type="email"], input[type="password"], select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+button {
+    display: inline-block;
+    background-color: #419751;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.5s;
+
+}
+
+button:hover {
+    background-color: #247e35;
+}

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="header">
+        <h1>Reading : {{ post.title }}</h1>
+    </div>
+    <div class="content">
+        <p>{{ post.content }}</p>
+        <i><small>{{ post.published_date }}</small></i>
+    </div>
+    <button class="button-2"><a href="{% url 'home' %}">Home Page</a></button>
+
+    <h2>Comments ( {{ count_comments }} ) : </h2>
+    <br>
+
+    {% for cm in comments %}
+        <div class="content">
+            <h4>- {{ cm.name }} - Commented:</h4>
+            <p> >>> {{ cm.body }}</p>
+            <small>{{ cm.created_on }}</small>
+        </div>
+    {% endfor %}
+    <br>
+    <form method="post" style="margin-top: 1.3em;">
+        <h5>Leave a comment for Me :D</h5>
+          {{ comment_form.as_p }}
+          {% csrf_token %}
+          <button type="submit" class="btn btn-primary  btn-lg">Submit</button>
+    </form>
+    <br>
+    <br>
+    <br>
+    <footer class="header">
+
+        <h1>Contact Me</h1>
+        <p style="color: #5a5a5a">email : Mikaeelrais@gmail.com</p>
+        <p style="color: #5a5a5a">phone number : +989334163965</p>
+        <p style="color: #5a5a5a">github : <a href="https://github.com/MikaeelDay" style="color: #725097">https://github.com/MikaeelDay</a></p>
+    </footer>
+
+{% endblock %}
